@@ -1,0 +1,3 @@
+198.61.203.202 (same as week1)
+
+web folder: /var/www (default)
