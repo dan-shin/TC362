@@ -1,3 +1,1 @@
-Hello
-
-This is a repository for TC362 Web Administration @ Michigan State University
+<h1>This is a repository for TC362 Web Administration @ Michigan State University</h1>
