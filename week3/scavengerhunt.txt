@@ -1,0 +1,22 @@
+1. method: "ls -l /usr/bin/ | wc -l" , count: 580
+2. method: "top" , process with highest usage: init
+3. method: "date" , server timezone: coordinated universal time (utc)
+4. method: "cat /etc/group" , count: 65 groups
+5. method: "wget http://cl.ly/2F0Q1r2y3K0l/362.tar" -> "tar xopf 362.tar" -> "vi 362.php" | output:
+
+<?php
+
+function sequence($n, $i=0, $j=1) {
+  return $n<=1 ? (array)$i : array_merge((array)$i, sequence($n-1, $j, $i+$j));
+}
+
+echo implode(',', sequence(20));
+echo "\n";
+
+?>
+
+code output:
+
+0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181
+
+It's the Fibonacci Sequence!!!
